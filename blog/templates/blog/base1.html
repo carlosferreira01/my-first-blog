@@ -24,12 +24,12 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span> 
                 </button>
-                <a class="navbar-brand" href="post_list.html">Feathers Blog</a>
+                <a class="navbar-brand" href="{% url 'post_list' %}">Feathers Blog</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                         <li><a class="nav-link" href="{% url 'about' %}">SOBRE</a></li>
-                        <li><a class="nav-link" href="{% url 'about' %}">CONTATO</a></li>
+                        <li><a class="nav-link" href="{% url 'contact' %}">CONTATO</a></li>
                 </ul>
               </div>
             </div>

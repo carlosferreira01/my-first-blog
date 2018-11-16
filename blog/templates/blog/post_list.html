@@ -2,11 +2,11 @@
 
 {% block content %}
     {% for post in posts %}
-        <div class="col-sm-8 side">
+        
                 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                 <h5><span class="glyphicon glyphicon-time"></span> Post,{{ post.published_date }}</h5>
                 <p>{{ post.text|linebreaksbr }}</p>
                 <br><br>
-            </div>
+           
                 {% endfor %} 
                 {% endblock %}
