@@ -1,0 +1,78 @@
+    {% load staticfiles %}
+    <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()">
+    <span class="google-src-text" style="direction: ltr; text-align: left">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Blogger Carlos Ferreira</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset=utf-8> 
+        <meta name=viewport content="width=device-width, initial-scale=1"> 
+        <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css> 
+        <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js></script> 
+        <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script> 
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    <body>
+    
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="index.html">Feathers Blog</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="about.html">SOBRE</a></li>
+                  <li><a href="post.html">EXAMPLO POST</a></li>
+                  <li><a href="contact.html">CONTATO</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div>
+    
+                <div class="jumbotron jumbotron-fluid text-center">
+                        <h1>Exemplo Post</h1> 
+                </div>
+
+                <div class="container">
+                        <div class="row">
+                          <div class="col-sm-2">
+                          </div>
+                          <div class="col-sm-8 text-align" id="font">
+                            <div>
+                            {% block content %}
+                            {% endblock %}
+
+                            </div>
+                            </div>
+                        </div>
+                            <div class="col-sm-2">
+                                </div>
+                            <div class="col-sm-8 text-align" id="font">
+                            <h4>Deixe um comentário:</h4>
+                                <form role="form">
+                                  <div class="form-group">
+                                    <textarea class="form-control" rows="3" required></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-success">Enviar</button>
+                                </form>
+                                <br><br>
+                                
+
+                          </div>
+                        </div>
+                      
+                
+
+                <footer class="container-fluid text-center">
+                        <p>Desenvolvido por Carlos Ferreira </p> 
+                </footer>
+</body>
+</html>

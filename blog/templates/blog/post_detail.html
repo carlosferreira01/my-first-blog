@@ -1,0 +1,13 @@
+{% extends 'blog/base1.html' %}
+
+{% block content %}
+    <div class="col-sm-8 text-align" id="font">
+                <h2>{{ post.title }}</a></h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post,{% if post.published_date %}
+                    {{ post.published_date }}
+                    {% endif %}
+                </h5>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <br><br>
+            </div>
+{% endblock %}
